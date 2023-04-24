@@ -15,6 +15,7 @@ int main(int ac, char **av)
                                                     /* Tanımlanan ID IOPMAssertionCreateWithName fonksiyonuna atanıyor. */
                                                     &assertionID);
 
+    (void)av;
     if(ac == 1)
     {
         if(success == kIOReturnSuccess)

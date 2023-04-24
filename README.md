@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/logo.png">
+  <img src="img/logo-bg.png">
   <br>
   <a href="https://github.com/fleizean/sleepwipe/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/fleizean/sleepwipe?style=for-the-badge">
