@@ -25,23 +25,13 @@ int main(int ac, char **av)
             success = IOPMAssertionRelease(assertionID);
         }
     }
-    else if(ac == 2 || ac == 3 || ac == 4)
+    else if(ac == 2 || ac == 3)
     {
         printf("...");
     }
     else
     {
-        struct utsname unameData;
-        int result = uname(&unameData);
-        if (result != -1)
-        {
-            printf("[GNU %s, version %s]",getenv("0"), unameData.version);
-            printf("These shell commands are defined by sleepwipe. Type <sleepwipe --help> to see this list.");
-            printf("Type <sleepwipe --help name> to find out more about the function <name>.");
-
-            printf("%ssleepwipe commands list:%s",GREEN, RESET);
-            
-        }
+        print_usage(av);
     }
     return success;
 }
