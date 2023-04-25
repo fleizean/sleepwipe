@@ -31,7 +31,7 @@ int main(int ac, char **av)
     }
     else
     {
-        print_usage(av);
+        print_usage();
     }
     return success;
 }
