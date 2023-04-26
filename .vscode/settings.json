@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "sleepwipe.h": "c"
+        "sleepwipe.h": "c",
+        "tree.h": "c",
+        "parser.h": "c"
     }
 }

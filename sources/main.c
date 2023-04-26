@@ -27,10 +27,12 @@ int main(int ac, char **av)
     }
     else if(ac == 2 || ac == 3)
     {
-        printf("...");
+        // Parse action
+        cmd_parser(av);
     }
     else
     {
+        // Unusable format and printing help area
         print_usage();
     }
     return success;

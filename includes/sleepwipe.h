@@ -14,19 +14,44 @@
 # include <libxml/parser.h>
 # include <libxml/tree.h>
 
-typedef struct	cmd_list {
+/* ------------------------- */
+/*         Structers         */
+
+/* Storage and router structer */
+typedef struct	cmd_router {
 	char*	cmd_name;
 	char*	cmd_description;
-	void	(*cmd_func)(void);
-	void	*next;
+	void	(*f)(char*);
 }				c_list;
 
+/* Client input structer */
+typedef struct cmd_list {
+	char*	cmd_act_flag;
+	char*	cmd_name;
+	int		cmd_act_input;
+}				t_list;
 
-/* cmdhelp.c */
+/* Global variable */
+t_list	cmd_list;
+
+/* ------------------------- */
+/*         Functions         */
+
+/* cmd_help.c */
 void	print_usage();
 
 /* utils.c */
 char    **ft_split(char *str);
 
 /* fetchdata.c */
-char		*fetchDataFromGithubRestAPI();
+char	*fetchDataFromGithubRestAPI();
+
+/* cmd_time.c */
+int		t_sleep(char *str);
+
+/* cmd_router.c */
+int		cmd_router(char *cmd_str);
+
+/* cmd_parser.c */
+char	*cmd_parser(char **cmd_line);
+/* ------------------------- */
