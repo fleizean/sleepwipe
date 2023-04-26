@@ -26,8 +26,9 @@ sleepwipe is an open-source package that prevents the computer from going to sle
 | --- | --- | --- |
 | parser | Parsing the incoming input and making it usable by the router. | under construction by cagriyalniz |
 | get data | Getting last commit date from GithubAPI | finished by fleizean |
-| time sleep | sleep until the input time | under construction by fleizean |
-| process sleep | sleep until the process ends | Active but waiting parser |
+| time sleep | Prevent sleep until the input time | under construction by fleizean |
+| process sleep | Prevent sleep until given process is finished | Active but waiting parser |
+| keyboard or mouse sleep | Prevent sleep until you touch keyboard or mouse | Active but waiting parser |
 
 ## Build
 
