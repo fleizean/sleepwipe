@@ -47,11 +47,14 @@ char    **ft_split(char *str);
 char	*fetchDataFromGithubRestAPI();
 
 /* cmd_time.c */
-int		t_sleep(char *str);
+void		t_sleep(char *str);
 
 /* cmd_router.c */
 int		cmd_router(char *cmd_str);
 
 /* cmd_parser.c */
 char	*cmd_parser(char **cmd_line);
+
+/* get_next_line.c */
+int		get_next_line(int fd, char **line);
 /* ------------------------- */

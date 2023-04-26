@@ -8,5 +8,7 @@ int cmd_router(char *cmd_str)
     _commands[1] = (c_list){"p", "...", t_sleep};
     _commands[2] = (c_list){NULL, NULL, NULL};
 
+    (void)cmd_str;
     // ...
+    return 1;
 }
