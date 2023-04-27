@@ -1,6 +1,6 @@
 #include "../includes/sleepwipe.h"
 
-char *cmd_parser(char **cmd_line)
+char *cmd_parser(char **cmd_line)//./sleepwipe -act -t 100
 {
 	(void)cmd_line;
 	/*char*	cmd_tmpactflag;
