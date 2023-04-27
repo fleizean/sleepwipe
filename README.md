@@ -22,13 +22,15 @@
 sleepwipe is an open-source package that prevents the computer from going to sleep on macOS.
 
 ## To Do List (Open Source Participation)
-| To Do | To Do Description | To Do Status |
-| --- | --- | --- |
-| parser | Parsing the incoming input and making it usable by the router. | under construction by cagriyalniz |
-| get data | Getting last commit date from GithubAPI | finished by fleizean |
-| time sleep | Prevent sleep until the input time | under construction by fleizean |
-| process sleep | Prevent sleep until given process is finished | Active but waiting parser |
-| keyboard or mouse sleep | Prevent sleep until you touch keyboard or mouse | Active but waiting parser |
+You can specify that you will do it by editing the None and Active values ​​and throwing a pull request.
+
+| To Do | To Do Description | To Do Status | Person To Do |
+| --- | --- | --- | --- |
+| parser | Parsing the incoming input and making it usable by the router. | Claimed | cagriyalniz |
+| get data | Getting last commit date from GithubAPI | Finished | fleizean |
+| time sleep | Prevent sleep until the input time | Claimed | fleizean |
+| process sleep | Prevent sleep until given process is finished | Active | None |
+| keyboard or mouse sleep | Prevent sleep until you touch keyboard or mouse | Active | None |
 
 ## Build
 
