@@ -29,7 +29,7 @@ You can specify that you will do it by editing the None and Active values ​​
 | parser | Parsing the incoming input and making it usable by the router. | Claimed | [cagriyalniz](https://github.com/cagriyalniz) |
 | get data | Getting last commit date from GithubAPI | Finished | [fleizean](https://github.com/fleizean) |
 | time sleep | Prevent sleep until the input time | Claimed | [fleizean](https://github.com/fleizean) |
-| process sleep | Prevent sleep until given process is finished | Active | None |
+| process sleep | Prevent sleep until given process is finished | Claimed | [fyurtsev](https://github.com/fyurtsev) |
 | keyboard or mouse sleep | Prevent sleep until you touch keyboard or mouse | Active | None |
 
 ## Build
