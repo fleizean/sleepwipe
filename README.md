@@ -38,3 +38,4 @@ You can specify that you will do it by editing the None and Active values ​​
     cd sleepwipe
     export PATH=$PATH:/currentarea/sleepwipe/
     sleepwipe -help
+test
