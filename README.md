@@ -30,7 +30,7 @@ You can specify that you will do it by editing the None and Active values ​​
 | get data | Getting last commit date from GithubAPI | Finished | [fleizean](https://github.com/fleizean) |
 | time sleep | Prevent sleep until the input time | Claimed | [fleizean](https://github.com/fleizean) |
 | process sleep | Prevent sleep until given process is finished | Claimed | [fyurtsev](https://github.com/fyurtsev) |
-| keyboard or mouse sleep | Prevent sleep until you touch keyboard or mouse | Active | None |
+| keyboard(some keyboard keys) or mouse click sleep | Prevent sleep until you touch some keyboard keys or mouse click | Claimed | [fleizean](https://github.com/fleizean) |
 
 ## Build
 
