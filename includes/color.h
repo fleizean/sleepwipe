@@ -9,3 +9,11 @@
 #define CYAN    "\x1B[36m"
 #define WHITE   "\x1B[37m"
 #define RESET   "\x1B[0m"
+
+#define BOLDRED     "\033[1m\033[31m"      /* BOLD RED */
+#define BOLDGREEN   "\033[1m\033[32m"      /* BOLD GREEN */
+#define BOLDYELLOW  "\033[1m\033[33m"      /* BOLD YELLOW */
+#define BOLDBLUE    "\033[1m\033[34m"      /* BOLD BLUE */
+#define BOLDMAGENTA "\033[1m\033[35m"      /* BOLD MAGENTA */
+#define BOLDCYAN    "\033[1m\033[36m"      /* BOLD CYAN */
+#define BOLDWHITE   "\033[1m\033[37m"      /* BOLD WHITE */

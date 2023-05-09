@@ -17,22 +17,22 @@
 /* ------------------------- */
 /*         Structers         */
 
+/* Client input structer */
+typedef struct _cmd_list {
+	bool	cmd_act_flag;
+	char	cmd_name;
+	int		cmd_act_input;
+}		t_list;
+
 /* Storage and router structer */
-typedef struct	cmd_router {
-	char*	cmd_name;
+typedef struct	_cmd_router {
+	char	cmd_name;
 	char*	cmd_description;
-	void	(*f)(char*);
+	int		(*cmd_function)(t_list);
 }				c_list;
 
-/* Client input structer */
-typedef struct cmd_list {
-	char*	cmd_act_flag;
-	char*	cmd_name;
-	int		cmd_act_input;
-}				t_list;
-
-/* Global variable */
-t_list	cmd_list;
+/* Global variable
+t_list	cmd_list; */
 
 /* ------------------------- */
 /*         Functions         */
@@ -46,14 +46,16 @@ char    **ft_split(char *str);
 /* fetchdata.c */
 char	*fetchDataFromGithubRestAPI();
 
-/* cmd_time.c */
-void		t_sleep(char *str);
+/* commands */
+int	t_sleep(t_list cmd);
+int p_sleep(t_list cmd);
+int k_sleep(t_list cmd);
 
 /* cmd_router.c */
-int		cmd_router(char *cmd_str);
+int		cmd_router(t_list cmd_str);
 
 /* cmd_parser.c */
-char	*cmd_parser(char **cmd_line);
+void	cmd_parser(int ac, char **av);
 
 /* get_next_line.c */
 int		get_next_line(int fd, char **line);
