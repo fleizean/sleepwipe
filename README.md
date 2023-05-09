@@ -26,9 +26,9 @@ You can specify that you will do it by editing the None and Active values ​​
 
 | To Do | To Do Description | To Do Status | Person To Do |
 | --- | --- | --- | --- |
-| parser | Parsing the incoming input and making it usable by the router. | Claimed | [cagriyalniz](https://github.com/cagriyalniz) |
-| get data | Getting last commit date from GithubAPI | Finished | [fleizean](https://github.com/fleizean) |
-| time sleep | Prevent sleep until the input time | Claimed | [fleizean](https://github.com/fleizean) |
+| parser | Parsing the incoming input and making it usable by the router. | Finished ✅ | [fleizean](https://github.com/fleizean) |
+| get data | Getting last commit date from GithubAPI | Finished ✅ | [fleizean](https://github.com/fleizean) |
+| time sleep | Prevent sleep until the input time | Finished ✅ | [fleizean](https://github.com/fleizean) |
 | process sleep | Prevent sleep until given process is finished | Claimed | [fyurtsev](https://github.com/fyurtsev) |
 | keyboard(some keyboard keys) or mouse click sleep | Prevent sleep until you touch some keyboard keys or mouse click | Claimed | [fleizean](https://github.com/fleizean) |
 
