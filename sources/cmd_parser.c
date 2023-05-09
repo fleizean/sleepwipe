@@ -1,6 +1,6 @@
 #include "../includes/sleepwipe.h"
 
-void cmd_parser(int ac,char **av)//./sleepwipe -act -t 100
+void cmd_parser(int ac,char **av)// example: ./sleepwipe -a -t 100
 {
 	t_list cmd;
 	int c;
@@ -18,7 +18,9 @@ void cmd_parser(int ac,char **av)//./sleepwipe -act -t 100
                 cmd.cmd_act_input = atoi(optarg);
 				cmd.cmd_name = c;
                 break;
-			
+			case 'h':
+                print_usage();
+                exit(1);
             default:
                 print_usage();
                 exit(EXIT_FAILURE);

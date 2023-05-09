@@ -23,12 +23,23 @@ export COMMITS_NUM="1"
 
 if ! command -v jq &> /dev/null; then
     printf " ${GREEN} jq not found installing...\n${RESET}"
-    brew install jq  # jq paketini yüklemek için kullanılan komut
+    if ! command -v brew &> /dev/null; then
+        echo "Brew is not installed."
+        exit 1
+    else
+        brew install jq  # jq paketini yüklemek için kullanılan komut
+    fi
+    
 fi
 
 if ! command -v curl &> /dev/null; then
     printf " ${GREEN} curl not found installing...\n${RESET}"
-    brew install curl  # curl paketini yüklemek için kullanılan komut
+    if ! command -v brew &> /dev/null; then
+        echo "Brew is not installed."
+        exit 1
+    else
+        brew install curl  # curl paketini yüklemek için kullanılan komut
+    fi
 fi
 
 curl --silent --insecure --request GET --header "Accept: application/vnd.github.inertia-preview+json" "$GIT_REPO/commits?sha=$BRANCH_NAME&page=1&per_page=1000" | jq --raw-output '.[] | "\(.commit.author.date)"' | awk 'NF' | awk '{$1=$1;print}' | head -$COMMITS_NUM | awk '{print substr($1, 1, 10)}' > scripts/apiresult.txt

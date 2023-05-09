@@ -37,4 +37,4 @@ You can specify that you will do it by editing the None and Active values ​​
     git clone https://github.com/fleizean/sleepwipe.git
     cd sleepwipe
     export PATH=$PATH:/currentarea/sleepwipe/
-    sleepwipe -help
+    sleepwipe -h
