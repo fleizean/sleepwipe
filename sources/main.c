@@ -19,15 +19,18 @@ int main(int ac, char **av)
     {
         if(success == kIOReturnSuccess)
         {
-            printf("%sSince no specific parameter is given to sleepwipe, it will prevent the computer from sleeping until the program is terminated.%s\n", RED, RESET);
+            printf("%sSince no specific parameter is given to sleepwipe, it will prevent the computer from sleeping until the program is terminated.%s\n", BOLDRED, RESET);
             CFRunLoopRun();
             success = IOPMAssertionRelease(assertionID);
         }
     }
-    else if(ac == 2 || ac == 3)
+    else if(ac == 4)
     {
         // Parse action
-        cmd_parser(av);
+        if(success == kIOReturnSuccess)
+        {
+            cmd_parser(ac, av);
+        }
     }
     else
     {
