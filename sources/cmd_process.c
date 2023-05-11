@@ -1,6 +1,6 @@
 #include "../includes/sleepwipe.h"
 
-int p_sleep(t_list cmd) {
+int p_sleep(t_list *cmd) {
     // p_sleep fonksiyonunun işlevselliği
     (void)cmd;
     exit(1);
