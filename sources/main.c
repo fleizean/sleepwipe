@@ -29,7 +29,8 @@ int main(int ac, char **av)
         // Parse action
         if(success == kIOReturnSuccess)
         {
-            cmd_parser(ac, av);
+            t_list cmd_lst;
+            cmd_parser(av + 1, &cmd_lst);
         }
     }
     else
