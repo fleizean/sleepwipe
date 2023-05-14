@@ -29,12 +29,11 @@ You can specify that you will do it by editing the None and Active values ​​
 | parser | Parsing the incoming input and making it usable by the router. | Finished ✅ | [fleizean](https://github.com/fleizean) |
 | get data | Getting last commit date from GithubAPI | Finished ✅ | [fleizean](https://github.com/fleizean) |
 | time sleep | Prevent sleep until the input time | Finished ✅ | [fleizean](https://github.com/fleizean) |
-| process sleep | Prevent sleep until given process is finished | Claimed | [fyurtsev](https://github.com/fyurtsev) |
+| process sleep | Prevent sleep until given process is finished | Finished ✅ | [fyurtsev](https://github.com/fyurtsev) |
 | keyboard(some keyboard keys) or mouse click sleep | Prevent sleep until you touch some keyboard keys or mouse click | Active | None |
 
 ## Build
 
-    git clone https://github.com/fleizean/sleepwipe.git
-    cd sleepwipe
-    export PATH=$PATH:/currentarea/sleepwipe/
+    git clone https://github.com/fleizean/sleepwipe.git || cd sleepwipe || make
+    export PATH=$PATH:~/<current_dir>/sleepwipe/ -> example export PATH=$PATH:~/Desktop/sleepwipe/
     sleepwipe -h

@@ -27,8 +27,7 @@ void	print_usage()
 		fprintf(stderr, "		-k		Do not block the computer sleep feature unless you click on some specific keys of\n"
 						"				the keyboard and the mouse.\n");
 		fprintf(stderr, "%sCurrently Unavailable\n%s",BLUE,RESET);
-		fprintf(stderr, "		-p\n");
-		fprintf(stderr, "		-k\n");
+		fprintf(stderr, "		-k, key, keyboard\n");
 		fprintf(stderr, "%sLast Update\n%s",BLUE,RESET);
 		fprintf(stderr, "		%s\n", title); // on progress
 	}
