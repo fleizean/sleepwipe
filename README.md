@@ -35,6 +35,7 @@ You can specify that you will do it by editing the None and Active values ​​
 | time sleep | Prevent sleep until the input time | Finished ✅ | [fleizean](https://github.com/fleizean) |
 | process sleep | Prevent sleep until given process is finished | Finished ✅ | [fyurtsev](https://github.com/fyurtsev) |
 | keyboard(some keyboard keys) or mouse click sleep | Prevent sleep until you touch some keyboard keys or mouse click | Active | None |
+| set a password sleep | Do not end the sleep until the designated password is entered. | Active | None |
 
 ## Build
 
