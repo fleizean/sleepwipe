@@ -24,7 +24,6 @@ export COMMITS_NUM="1"
 if ! command -v jq &> /dev/null; then
     printf " ${GREEN} jq not found installing...\n${RESET}"
     if ! command -v brew &> /dev/null; then
-        echo "Brew is not installed."
         exit 1
     else
         brew install jq  # jq paketini yüklemek için kullanılan komut
@@ -35,7 +34,6 @@ fi
 if ! command -v curl &> /dev/null; then
     printf " ${GREEN} curl not found installing...\n${RESET}"
     if ! command -v brew &> /dev/null; then
-        echo "Brew is not installed."
         exit 1
     else
         brew install curl  # curl paketini yüklemek için kullanılan komut

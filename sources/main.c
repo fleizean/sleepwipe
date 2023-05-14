@@ -2,19 +2,12 @@
 
 int main(int ac, char **av)
 {
-    /* Uyku önleme işlemi için kullanılacak ID tanımlanıyor. */
     IOPMAssertionID assertionID;
-    /* Aktivitenin nedenini tanımlayan bir CFStringRef oluşturuluyor. */
     CFStringRef reasonForActivity= CFSTR("Prevent system sleep");
-    /* Uyku önleme işlemi için bir IOPMAssertionType tanımlanıyor. */
     IOReturn success = IOPMAssertionCreateWithName(kIOPMAssertionTypeNoDisplaySleep,
-                                                    /* Uyku önleme seviyesi tanımlanıyor. */
                                                     kIOPMAssertionLevelOn,
-                                                    /* Aktivitenin nedeni belirtiliyor. */
                                                     reasonForActivity,
-                                                    /* Tanımlanan ID IOPMAssertionCreateWithName fonksiyonuna atanıyor. */
                                                     &assertionID);
-
     if(ac == 1)
     {
         if(success == kIOReturnSuccess)
@@ -26,7 +19,6 @@ int main(int ac, char **av)
     }
     else if(ac == 4)
     {
-        // Parse action
         if(success == kIOReturnSuccess)
         {
             t_list cmd_lst;
@@ -34,9 +26,6 @@ int main(int ac, char **av)
         }
     }
     else
-    {
-        // Unusable format and printing help area
         print_usage();
-    }
     return success;
 }
