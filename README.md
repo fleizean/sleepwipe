@@ -18,6 +18,10 @@
   </a>
 </div>
 
+# Video Preview
+[![Preview](https://img.youtube.com/vi/TexHTlw6Z7c/0.jpg)](https://www.youtube.com/watch?v=TexHTlw6Z7c)
+
+
 ## About
 sleepwipe is an open-source package that prevents the computer from going to sleep on macOS.
 
