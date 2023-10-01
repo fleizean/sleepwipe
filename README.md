@@ -24,7 +24,9 @@
 sh -c "$(curl https://raw.githubusercontent.com/fleizean/sleepwipe/main/install.sh)"
 ```
 # Video Preview
+<center>
 [![Preview](https://img.youtube.com/vi/TexHTlw6Z7c/0.jpg)](https://www.youtube.com/watch?v=TexHTlw6Z7c)
+</center>
 
 
 ## About
