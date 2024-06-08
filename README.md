@@ -18,11 +18,6 @@
   </a>
 </div>
 
-# installation
-
-```bash
-sh -c "$(curl https://raw.githubusercontent.com/fleizean/sleepwipe/main/install.sh)"
-```
 # Video Preview
 <p align="center">
   <a href="https://www.youtube.com/watch?v=TexHTlw6Z7c">
@@ -43,11 +38,12 @@ You can specify that you will do it by editing the None and Active values ​​
 | get data | Getting last commit date from GithubAPI | Finished ✅ | [fleizean](https://github.com/fleizean) |
 | time sleep | Prevent sleep until the input time | Finished ✅ | [fleizean](https://github.com/fleizean) |
 | process sleep | Prevent sleep until given process is finished | Finished ✅ | [fyurtsev](https://github.com/fyurtsev) |
-| keyboard(some keyboard keys) or mouse click sleep | Prevent sleep until you touch some keyboard keys or mouse click | Active | None |
-| set a password sleep | Do not end the sleep until the designated password is entered. | Claimed | [fyurtsev](https://github.com/fyurtsev) |
 
-## Build
-
+## Build Insallation I
     git clone https://github.com/fleizean/sleepwipe.git || cd sleepwipe || make
     export PATH=$PATH:~/<current_dir>/sleepwipe/ -> example export PATH=$PATH:~/Desktop/sleepwipe/
     sleepwipe -h
+  ### Build Insallation II
+  ```bash
+  sh -c "$(curl https://raw.githubusercontent.com/fleizean/sleepwipe/main/install.sh)"
+  ```
